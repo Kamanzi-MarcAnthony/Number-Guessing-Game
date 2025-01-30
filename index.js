@@ -35,6 +35,9 @@ document.getElementById("submitButton").onclick = function () {
             guessCount++;
             document.getElementById("guessCount").textContent = `Number of Guesses: ${guessCount}`
             document.getElementById("returnComment").textContent= `Correct! I was thinking of ${number}`;
+            document.getElementById("submitButton").onclick = function () {
+                document.getElementById("returnComment").textContent= "Reload Page to Start New Game"
+            }
             // console.log("Correct");
         }
         return;
