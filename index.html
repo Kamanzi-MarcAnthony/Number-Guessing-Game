@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <div class="flex h-screen w-screen bg-orange-100 justify-center items-center">
+        <div class="w-1/2 h-1/2 bg-white border-1 border-black rounded-3xl flex flex-col justify-center items-center p-8 gap-y-4">
+            <div class="w-[70%] h-[10%] flex justify-center items-center text-2xl font-bold text-blue-600">
+                <p class="text-center">Am thinking of a Number between 1 and 100</p>
+            </div>
+            <div class="w-[70%] h-[10%] flex justify-center items-center">Guess the number</div>
+            <div class="w-[50%] h-[15%] flex justify-center items-center">
+                <input id="userGuess" type="text" class="w-full h-full border-1 rounded-2xl border-black px-5 bg-slate-100 text-center text-2xl font-bold text-purple-800">
+            </div>
+            <div class="w-[50%] h-[5%] flex justify-center items-center">
+                <p id="returnComment"></p>
+            </div>
+            <div class="w-[50%] h-[15%] flex justify-center items-center">
+                <Button id="submitButton" class="w-full h-full rounded-2xl bg-blue-600 hover:bg-blue-400 text-white font-bold text-md">Guess</Button>
+            </div>
+            <div class="w-[70%] h-[10%] flex justify-center items-center">
+                <p id="guessCount"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
